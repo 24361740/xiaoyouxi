@@ -2,19 +2,50 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<script src="index.js"></script>
-	<link rel="stylesheet" href="index.css">
+	<title>打字游戏</title>
+	<script src="Code.js"></script>
 </head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	html{
+		width: 100%;
+		height: 100%;
+	}
+	body{
+		
+		background: url('img/yxi.jpg')no-repeat; 
+		background-size:100%;
+	}
+	.box{
+		width: 200px;
+		height: 100px;
+		margin-bottom: 10px;
+	}
+	.box>div{
+		height: 50%;
+		text-align: center;
+		color: #F6F6F6;
+		line-height: 20px;
+	}
+	.box>button{
+		width: 50px;		
+		float: left;
+		margin-left: 8px;
+		text-align: center;
+		outline: none;
+	}
+</style>
 <body>
-<div class="fenshu">分数:<span>0</span></div>
-<div class="shengming">生命:<span>10</span></div>
-<!-- <div class="box">
-	分数:<h1>0</h1>
-	生命:<h1>10</h1>
-	<button>重新开始</button>
-	<button>下一关</button>
-</div> -->
+	<div class="box">
+		<div class="score">分 数：<span>0</span></div>
+		<div class="life">生命值：<span>20</span></div>
+	</div>
+	
 </body>
 </html>
-<script src="code.js"></script>
+<script src="function.js"></script>
+<script src="index.js"></script>
+
